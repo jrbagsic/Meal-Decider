@@ -1,0 +1,187 @@
+*, *:before, *:after {box-sizing: inherit;}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  background: #207fa5;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0;
+  border-bottom: 4px solid rgb(255, 255, 255);
+  padding-bottom: 10px;
+}
+
+span {
+  display: block;
+}
+
+h2 {
+  font-size: 3.6rem;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+p,
+label {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.search-bar {
+  margin-top: 8px;
+}
+
+input {
+  border: solid 3px #ffffff;
+  border-radius: 0;
+  height: 38px;
+  margin: 0;
+  transition: 0.3s;
+}
+
+input[type='text'] {
+  margin-right: -4.2px;
+  padding-left: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  background-color:white;
+  color:  #0f2128;
+}
+
+input[type="submit"] {
+  background-color: #207fa5;
+  color: #ffffff;
+  padding: 1px 15px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: white;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.meal-box {
+    border: 1px solid #fff;
+    margin: auto;
+    width: 200px;
+  }
+  
+  div.meal-box:hover {
+    border: 1px solid #fff;
+    margin: auto;
+  }
+  
+  div.meal-box img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.button {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 400px;
+  }
+
+@media (max-width: 780px) {
+  .results {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 690px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  form {
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type='text'] {
+    margin: 0;
+  }
+}
